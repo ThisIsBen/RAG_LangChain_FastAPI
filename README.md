@@ -19,17 +19,17 @@ https://colab.research.google.com/drive/1DsCKNSydCq7DbJpsp4KST-myGiFyvzf5#scroll
 # Procedure to deploy it to your own PC:
 ## Get the API for using Google Gemini LLM. It provides $300 free credits for 90 days
 ### Use LangChain to run Gemini: 
-Reference: https://python.langchain.com/docs/integrations/chat/google_generative_ai/  \
+Guide: https://python.langchain.com/docs/integrations/chat/google_generative_ai/  \
 Gemini API Key: \
 AIzaSyA-U0j8Cxp6n0Q8YgvDTNfDGiVnQXWML2Y
 
 ### Create Gemini API Key from Google AI Studio:
-https://aistudio.google.com/apikey
+Guide: https://aistudio.google.com/apikey
 
 
 
 ### Use LangChain to run Google Vertex AI text_embedding:
-https://python.langchain.com/docs/integrations/text_embedding/google_vertex_ai_palm/ \
+Guide: https://python.langchain.com/docs/integrations/text_embedding/google_vertex_ai_palm/ \
 Google Cloud Project ID: \
 sublime-amp-451213-j2 \
 LOCATION: \
