@@ -41,13 +41,15 @@ pip install -qU langchain-google-vertexai
 pip install fastapi nest-asyncio pyngrok uvicorn
 ```
 
-## Demo of this application:
+## Demo Google Colab page:
+https://colab.research.google.com/drive/1DsCKNSydCq7DbJpsp4KST-myGiFyvzf5#scrollTo=p_aPBKrjtuzv
+
+
+
+## Demo of this application(Run the chatbot_server.py on Google colab):
 ![RAG_Chatbot_Demo](https://github.com/user-attachments/assets/eae36727-babc-4839-b908-5b54676bd566)
 
 
-
-## Demo Google Colab page:
-https://colab.research.google.com/drive/1DsCKNSydCq7DbJpsp4KST-myGiFyvzf5#scrollTo=p_aPBKrjtuzv
 
 
 ## Reference:
