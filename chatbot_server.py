@@ -84,14 +84,26 @@ if __name__=="__main__":
 
   # Start FastAPI
   import uvicorn
-  ngrokAuthToken="2u4Q4n0UlcNfhXzpZ3XEHSrm7pN_5FAzxrrh3wqqEjcgJMfUF"
-  ngrok.set_auth_token(ngrokAuthToken)
-  ngrok_tunnel = ngrok.connect(8000)
-  print('Public URL:', ngrok_tunnel.public_url)
-  nest_asyncio.apply()
-  uvicorn.run(app, port=8000)
+  # Option 1
+  # If your PC has a fix IP, you can run this with localhost
+  uvicorn.run(app, host="127.0.0.1", port=8000)
 
 
-  # Notice: ngrok will give users a new public URL every time the program is run, 
-  # so  users  need to copy the URL printed in the command line, 
-  # and apply it to the "fastAPIServerURL" in chatbot_client.html
+#   # Option 2
+#   # If your PC doesn't have a fix IP, 
+#   # a Public URL is required.
+#   # You need to use ngrok to create a Public URL to run this server 
+  
+#   # Notice: ngrok will give users a new public URL every time the program is run, 
+#   # so  users  need to copy the URL printed in the command line, 
+#   # and apply it to the "fastAPIServerURL" in chatbot_client.html
+
+#   ngrokAuthToken="2u4Q4n0UlcNfhXzpZ3XEHSrm7pN_5FAzxrrh3wqqEjcgJMfUF"
+#   ngrok.set_auth_token(ngrokAuthToken)
+#   ngrok_tunnel = ngrok.connect(8000)
+#   print('Public URL:', ngrok_tunnel.public_url)
+#   nest_asyncio.apply()
+#   uvicorn.run(app, port=8000)
+
+
+  

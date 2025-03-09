@@ -17,12 +17,23 @@
 
   <script>
     // Define FastAPI Server URL:
+    //Option 1
+    // If chatbot_server.py is run a PC that has a fix IP,
+    // connect to that IP with the specified port in chatbot_server.py
+    // Here we run chatbot_client.html on the same PC,
+    // so we connect to localhost.
+    fastAPIServerURL='127.0.0.1:8000'
 
-    // This field should be changed every time you run the chatbot_server.py
-    // chatbot_server.py will print a "Public URL" in command line.
-    // You just need to copy it and apply it to "fastAPIServerURL" here.
-    fastAPIServerURL=' https://b834-34-16-181-65.ngrok-free.app'
+    // Option 2 
+    // // If chatbot_server.py is run a PC that doesn't have a fix IP,
+    // // This field should be changed every time you run the chatbot_server.py
+    // // chatbot_server.py will print a "Public URL" in command line.
+    // // You just need to copy it and apply it to "fastAPIServerURL" here.
+    // fastAPIServerURL=' https://b834-34-16-181-65.ngrok-free.app'
     
+
+
+
     var app = angular.module('chatApp', []);
     app.controller('ChatController', function($scope, $http) {
       $scope.chatRecord = [];
