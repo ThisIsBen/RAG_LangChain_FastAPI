@@ -5,7 +5,7 @@ A chatbot that is implement by using Framework: LangChain, LLM: Google Gemini, A
 
 ## Get the API for using Google Gemini LLM. It provides $300 free credits for 90 days
 ### Use LangChain to run Gemini: 
-Reference: https://python.langchain.com/docs/integrations/chat/google_generative_ai/
+Reference: https://python.langchain.com/docs/integrations/chat/google_generative_ai/  \
 Gemini API Key: \
 AIzaSyA-U0j8Cxp6n0Q8YgvDTNfDGiVnQXWML2Y
 
@@ -15,7 +15,7 @@ https://aistudio.google.com/apikey
 
 
 ### Use LangChain to run Google Vertex AI text_embedding:
-https://python.langchain.com/docs/integrations/text_embedding/google_vertex_ai_palm/
+https://python.langchain.com/docs/integrations/text_embedding/google_vertex_ai_palm/ \
 Google Cloud Project ID: \
 sublime-amp-451213-j2
 LOCATION: \
