@@ -12,14 +12,17 @@
     </div>
     <input type="text" ng-model="userMessage" placeholder="Type a message...">
     <button ng-click="sendMessage()">Send</button>
-    <!-- <p>{{ responseMessage }}</p> -->
+ 
   </div>
 
   <script>
-    // FastAPI Server:
-    fastAPIServer_PostURL=' https://b834-34-16-181-65.ngrok-free.app'
-    //fastAPIServer_PostURL='http://127.0.0.1:8000/send/'
+    // Define FastAPI Server URL:
 
+    // This field should be changed every time you run the chatbot_server.py
+    // chatbot_server.py will print a "Public URL" in command line.
+    // You just need to copy it and apply it to "fastAPIServerURL" here.
+    fastAPIServerURL=' https://b834-34-16-181-65.ngrok-free.app'
+    
     var app = angular.module('chatApp', []);
     app.controller('ChatController', function($scope, $http) {
       $scope.chatRecord = [];
@@ -33,7 +36,7 @@
           text: $scope.userMessage
         };
         
-        $http.post(fastAPIServer_PostURL+"/send/", clientMsg, {
+        $http.post(fastAPIServerURL+"/send/", clientMsg, {
           headers: {
             'Content-Type': 'application/json'
             // 'Content-Type': 'application/x-www-form-urlencoded'

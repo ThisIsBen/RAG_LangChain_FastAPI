@@ -94,4 +94,4 @@ if __name__=="__main__":
 
   # Notice: ngrok will give users a new public URL every time the program is run, 
   # so  users  need to copy the URL printed in the command line, 
-  # and apply it to the "fastAPIServer_PostURL" in chatbot_client.html
+  # and apply it to the "fastAPIServerURL" in chatbot_client.html
