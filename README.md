@@ -68,9 +68,9 @@ https://python.langchain.com/docs/tutorials/llm_chain/
 If your want to run server side program with a Public URL(For example, running with Google Colab), you need to register a free ngrok account and get the Authetication token
 #### Step1 Create a ngrok acount from the following URL
 ngrok homepage: https://ngrok.com/
-#### Step2 Copy your Authetication token like below
+#### Step2 Copy your Authentication token like below
 ![image](https://github.com/user-attachments/assets/e5897ed9-d4dc-4f3a-954b-b019de86ff17)
-
+#### Step3 Apply your Authentication token to "ngrokAuthToken" in chatbot_server.py
 
 
 
