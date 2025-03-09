@@ -28,6 +28,8 @@ Set the API Key as GOOGLE_API_KEY instead of Gemini_API_KEY environment variable
 
 ## Install requirements:
 ### Install RAG requirements: framwork:langchain LLM:Google gemini-1.5-pro
+If you want to use Google colab to run the all the server side python program, \
+you need to add ! at the front of each pip install xxxx
 ```
 pip install --quiet --upgrade langchain-text-splitters langchain-community langgraph
 
@@ -37,6 +39,8 @@ pip install -qU langchain-google-vertexai
 ```
 
 ### Install FastAPI requirements:
+If you want to use Google colab to run the all the server side python program, \
+you need to add ! at the front of each pip install xxxx
 ```
 pip install fastapi nest-asyncio pyngrok uvicorn
 ```
