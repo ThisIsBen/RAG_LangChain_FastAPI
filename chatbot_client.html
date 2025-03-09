@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="chatApp">
+<head>
+  <title>AngularJS Chatbot</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body>
+  <div ng-controller="ChatController">
+    <h1>Chatbot</h1>
+    <div>
+      <p ng-repeat="message in chatRecord track by $index">{{ message }}</p>
+    </div>
+    <input type="text" ng-model="userMessage" placeholder="Type a message...">
+    <button ng-click="sendMessage()">Send</button>
+    <!-- <p>{{ responseMessage }}</p> -->
+  </div>
+
+  <script>
+    // FastAPI Server:
+    fastAPIServer_PostURL=' https://b834-34-16-181-65.ngrok-free.app'
+    //fastAPIServer_PostURL='http://127.0.0.1:8000/send/'
+
+    var app = angular.module('chatApp', []);
+    app.controller('ChatController', function($scope, $http) {
+      $scope.chatRecord = [];
+      chatRecordLenLimit=4
+      $scope.userMessage = '';
+      $scope.responseMessage = '';
+
+
+      $scope.sendMessage = function() {
+        var clientMsg = {
+          text: $scope.userMessage
+        };
+        
+        $http.post(fastAPIServer_PostURL+"/send/", clientMsg, {
+          headers: {
+            'Content-Type': 'application/json'
+            // 'Content-Type': 'application/x-www-form-urlencoded'
+          }
+        }).then(function(response) {
+          
+          //Clear the chat record if it accumulates a lot
+          if($scope.chatRecord.length>chatRecordLenLimit)
+          {
+            $scope.chatRecord=[]
+          }
+          $scope.responseMessage = response.data.message;
+          $scope.chatRecord.push('User: ' + $scope.userMessage);
+          // For now, just echo the user's message as the chatbot's response
+          $scope.chatRecord.push('Answer from AI: ' + $scope.responseMessage);
+          $scope.userMessage = '';
+          
+
+        }, function(error) {
+          console.log('Error:', error);
+        });
+
+        // code here will be run before getting the result from FastAPI
+      };
+    });
+  </script>
+</body>
+</html>
