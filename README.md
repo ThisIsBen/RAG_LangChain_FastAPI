@@ -3,7 +3,7 @@ A chatbot that is implement by using Framework: LangChain, LLM: Google Gemini, A
 
 
 
-## Get the API for using Google Gemini LLM. It provides $300 free credits
+## Get the API for using Google Gemini LLM. It provides $300 free credits for 90 days
 ### Use LangChain to run Gemini: 
 Reference: https://python.langchain.com/docs/integrations/chat/google_generative_ai/
 Gemini API Key: \
