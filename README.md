@@ -3,6 +3,9 @@ A chatbot that is implement by using Framework: LangChain, LLM: Google Gemini, A
 client Web UI: AngularJS
 
 
+## Demo of this application(Run all the server side python programs on Google colab):
+![RAG_Chatbot_Demo](https://github.com/user-attachments/assets/eae36727-babc-4839-b908-5b54676bd566)
+
 
 ## Quick tryout with Google Colab page:
 Run all the cells in the Google Colab page, and then paste the printed "Public URL" to "fastAPIServerURL" variable in chatbot_client.html. \
@@ -10,9 +13,6 @@ Open chatbot_client.html with browser, then you can try out this RAG chatbot rea
 https://colab.research.google.com/drive/1DsCKNSydCq7DbJpsp4KST-myGiFyvzf5#scrollTo=p_aPBKrjtuzv
 
 
-
-## Demo of this application(Run all the server side python programs on Google colab):
-![RAG_Chatbot_Demo](https://github.com/user-attachments/assets/eae36727-babc-4839-b908-5b54676bd566)
 
 
 
