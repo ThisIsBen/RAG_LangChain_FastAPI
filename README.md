@@ -47,7 +47,9 @@ you need to add ! at the front of each pip install xxxx
 pip install fastapi nest-asyncio pyngrok uvicorn
 ```
 
-## Demo Google Colab page:
+## Quich tryout with Google Colab page:
+Run all the cells in the Google Colab page, and then paste the printed "Public URL" to "fastAPIServerURL" variable in chatbot_client.html. \
+Open chatbot_client.html with browser, then you can try out this RAG chatbot real quick.  
 https://colab.research.google.com/drive/1DsCKNSydCq7DbJpsp4KST-myGiFyvzf5#scrollTo=p_aPBKrjtuzv
 
 
