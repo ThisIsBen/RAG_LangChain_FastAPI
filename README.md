@@ -1,5 +1,6 @@
 # RAG_LangChain_FastAPI
-A chatbot that is implement by using Framework: LangChain, LLM: Google Gemini, API Server: FastAPI , \ client Web UI: AngularJS
+A chatbot that is implement by using Framework: LangChain, LLM: Google Gemini, API Server: FastAPI , \ 
+client Web UI: AngularJS
 
 
 
