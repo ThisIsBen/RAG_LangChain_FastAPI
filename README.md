@@ -4,6 +4,19 @@ client Web UI: AngularJS
 
 
 
+## Quick tryout with Google Colab page:
+Run all the cells in the Google Colab page, and then paste the printed "Public URL" to "fastAPIServerURL" variable in chatbot_client.html. \
+Open chatbot_client.html with browser, then you can try out this RAG chatbot real quick.  
+https://colab.research.google.com/drive/1DsCKNSydCq7DbJpsp4KST-myGiFyvzf5#scrollTo=p_aPBKrjtuzv
+
+
+
+## Demo of this application(Run all the server side python programs on Google colab):
+![RAG_Chatbot_Demo](https://github.com/user-attachments/assets/eae36727-babc-4839-b908-5b54676bd566)
+
+
+
+# Procedure to deploy it to your own PC:
 ## Get the API for using Google Gemini LLM. It provides $300 free credits for 90 days
 ### Use LangChain to run Gemini: 
 Reference: https://python.langchain.com/docs/integrations/chat/google_generative_ai/  \
@@ -46,16 +59,6 @@ you need to add ! at the front of each pip install xxxx
 ```
 pip install fastapi nest-asyncio pyngrok uvicorn
 ```
-
-## Quich tryout with Google Colab page:
-Run all the cells in the Google Colab page, and then paste the printed "Public URL" to "fastAPIServerURL" variable in chatbot_client.html. \
-Open chatbot_client.html with browser, then you can try out this RAG chatbot real quick.  
-https://colab.research.google.com/drive/1DsCKNSydCq7DbJpsp4KST-myGiFyvzf5#scrollTo=p_aPBKrjtuzv
-
-
-
-## Demo of this application(Run all the server side python programs on Google colab):
-![RAG_Chatbot_Demo](https://github.com/user-attachments/assets/eae36727-babc-4839-b908-5b54676bd566)
 
 
 
