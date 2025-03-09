@@ -1,5 +1,5 @@
 # RAG_LangChain_FastAPI
-A chatbot that is implement by using Framework: LangChain, LLM: Google Gemini, API Server: FastAPI
+A chatbot that is implement by using Framework: LangChain, LLM: Google Gemini, API Server: FastAPI 
 
 
 ## Get the API for using Google Gemini LLM. It provides $300 free credits
@@ -28,17 +28,21 @@ Set the API Key as GOOGLE_API_KEY instead of Gemini_API_KEY environment variable
 
 ## Install requirements:
 ### Install RAG requirements: framwork:langchain LLM:Google gemini-1.5-pro
+```
 pip install --quiet --upgrade langchain-text-splitters langchain-community langgraph
 
 pip install -qU "langchain[google-vertexai]"
 
 pip install -qU langchain-google-vertexai
-
+```
 
 ### Install FastAPI requirements:
+```
 pip install fastapi nest-asyncio pyngrok uvicorn
+```
 
-
+## Demo of this application:
+![RAG_Chatbot_Demo](https://github.com/user-attachments/assets/eae36727-babc-4839-b908-5b54676bd566)
 
 
 
